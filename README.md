@@ -19,7 +19,7 @@ Use this link to install [VS Code](https://code.visualstudio.com/download).
 
 ## 2. Install the C/C++ extension for VS Code
 
-Search for this in the Extensions view.
+Search for this in the Extensions view on VS Code.
 
 ## 3. Install a Compiler
 
