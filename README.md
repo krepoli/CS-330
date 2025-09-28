@@ -35,5 +35,4 @@ ensure GCC is installed or download [GCC](https://code.visualstudio.com/docs/cpp
 
 ## 4. Open VS Code and create a new .cpp file
 
-Now you are ready to begin your first project!\
-Locate the helloworld.cpp file to begin!
+Now you are ready to begin your first project!
