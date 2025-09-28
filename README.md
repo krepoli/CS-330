@@ -6,8 +6,8 @@ This project is for my CS 330 class, Structure and Organization of Programming L
 
 C++ was invented by Danish scientist Bjarne Stroustrup at AT&T Bell Labs in 1979. He was impressed by the program organization and concurrency features of Simula (another programming language) and wanted to implement them to C. This included the implementation of classes, public/private access control, constructors and destructors, friend classes, call and return functions (soon removed), and default arguments. The language was originally called "C with Classes" and then C84, but was finally changed to C++. C++ is a general-purpose programming language, meaning it has many uses and extensive features. It is used to power search engines, VR applications, air travel, game development, and movie production, and is most popular for building large software infrastructure and applications that run on limited resources.
 
-Sources: 
-[A Brief History of C++](https://www.perforce.com/blog/qac/misra-cpp-history#introduction-c-history)
+Sources:\
+[A Brief History of C++](https://www.perforce.com/blog/qac/misra-cpp-history#introduction-c-history)\
 [What is C++ Used For?](https://www.codecademy.com/resources/blog/what-is-c-plus-plus-used-for)
 
 # Installation and Setup
@@ -19,7 +19,7 @@ Use this link to install [VS Code](https://code.visualstudio.com/download).
 
 ## 2. Install the C/C++ extension for VS Code
 
-Search for this in the Extensions view.
+Search for this in the Extensions view on VS Code.
 
 ## 3. Install a Compiler
 
@@ -35,3 +35,9 @@ ensure GCC is installed or download [GCC](https://code.visualstudio.com/docs/cpp
 ## 4. Open VS Code and create a new .cpp file
 
 Now you are ready to begin your first project!
+
+# Printing Hello, World!
+
+This is the first code you will write in C++. It will help you understand the basic syntax of the language!
+
+See my code [here](CS-330/helloworld.cpp)
