@@ -2,7 +2,7 @@
 
 C++ is one of the most popular programming languages and can be found today in operating systems, Graphical User Interfaces, and embedded systems. This project is for my CS 330 class, Structure and Organization of Programming Languages, at Simmons University. I will provide a tutorial on how to code in C++. It is an object-oriented programming language.
 
-# History of C++
+# History
 
 C++ was invented by Danish scientist Bjarne Stroustrup at AT&T Bell Labs in 1979. He was impressed by the program organization and concurrency features of Simula (another programming language) and wanted to implement them to C. This included the implementation of classes, public/private access control, constructors and destructors, friend classes, call and return functions (soon removed), and default arguments. The language was originally called "C with Classes" and then C84, but was finally changed to C++. C++ is a general-purpose programming language, meaning it has many uses and extensive features. It is used to power search engines, VR applications, air travel, game development, and movie production, and is most popular for building large software infrastructure and applications that run on limited resources.
 
@@ -37,8 +37,16 @@ ensure GCC is installed or download [GCC](https://code.visualstudio.com/docs/cpp
 
 Now you are ready to begin your first project!
 
-# Hello, World!
+# Your First C++ project
 
-This is your first programming project in C++!
+This is your first programming project in C++! It's tradition for programmers to first print "Hello, World!"
+
+**How to Comment on your Code:**
+```cpp
+// this is a comment
+
+/* this is a 
+multiline comment */
+```
 
 See my code [here](helloworld.cpp)
