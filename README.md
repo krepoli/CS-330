@@ -13,16 +13,13 @@ Sources: \
 
 # Installation and Setup
 
-## 1. Choose an IDE
-
-I will be using Visual Studio Code as my programming environment for this tutorial because I have used it in the past and find the interface easy to use.
+1. Choose an IDE
+I will be using Visual Studio Code as my programming environment because the interface easy to use.
 Use this link to install [VS Code](https://code.visualstudio.com/download).
 
-## 2. Install the C/C++ extension for VS Code
+2. Install the C/C++ extension for VS Code
 
-Search for this in the Extensions view on VS Code.
-
-## 3. Install a Compiler
+3. Install a Compiler
 
 **Windows:**
 download MinGW-w64 via [MSYS2](https://code.visualstudio.com/docs/cpp/config-mingw)
@@ -33,13 +30,11 @@ ensure Clang is installed or download [Clang](https://code.visualstudio.com/docs
 **Linux:**
 ensure GCC is installed or download [GCC](https://code.visualstudio.com/docs/cpp/config-linux)
 
-## 4. Open VS Code and create a new .cpp file
-
-Now you are ready to begin your first project!
-
 # Your First C++ project
 
-This is your first programming project in C++! It's tradition for programmers to first print "Hello, World!"
+This is your first programming project in C++! It will teach you the program's basic syntax through printing "Hello, World!"
+
+Start by opening VS Code and creating a new .cpp file.
 
 **How to Comment on your Code:**
 ```cpp
@@ -50,3 +45,21 @@ multiline comment */
 ```
 
 See my code [here](helloworld.cpp)
+
+# Data Types and Naming Conventions
+
+C++ has built-in types for:
+* integers
+* floating-points
+* doubles
+* booleans
+* characters
+* pointers
+* arrays
+Strings and dictionaries are not built-in but can be implemented through libraries.
+
+**Note:** C++ does not add new lines on its own. Use **\n** to create a new line.
+
+See these data types in my code [here](datatypes.cpp)
+
+Source: [Data Types in C++](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
