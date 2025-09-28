@@ -41,4 +41,4 @@ Now you are ready to begin your first project!
 
 This is your first programming project in C++!
 
-See my code [here](CS-330/helloworld.cpp)
+See my code [here](helloworld.cpp)
