@@ -57,6 +57,7 @@ C++ has built-in types for:
 * strings
 * pointers
 * arrays\
+
 Dictionaries are not built-in but can be implemented through libraries.
 
 **Note:** C++ does not add new lines on its own. Use **\n** to create a new line.
