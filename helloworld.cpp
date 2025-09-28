@@ -4,7 +4,7 @@
 #include <iostream>
 // this means we can use names for objects and variables
 using namespace std;
-
+  
 int main() { // starts the function
   cout << "Hello World!"; // outputs/prints text
   return 0; // ends the function
