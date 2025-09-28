@@ -1,10 +1,10 @@
 # Welcome to C++
 
-C++ is one of the most popular programming languages and can be found today in operating systems, Graphical User Interfaces, and embedded systems. This project is for my CS 330 class, Structure and Organization of Programming Languages, at Simmons University. I will provide a tutorial on how to code in C++. It is an object-oriented programming language.
+C++ is one of the most popular programming languages and can be found today in operating systems, Graphical User Interfaces, and embedded systems. This project is for my CS 330 class, Structure and Organization of Programming Languages, at Simmons University. I will provide a tutorial on how to code in C++.
 
 # History
 
-C++ was invented by Danish scientist Bjarne Stroustrup at AT&T Bell Labs in 1979. He was impressed by the program organization and concurrency features of Simula (another programming language) and wanted to implement them to C. This included the implementation of classes, public/private access control, constructors and destructors, friend classes, call and return functions (soon removed), and default arguments. The language was originally called "C with Classes" and then C84, but was finally changed to C++. C++ is a general-purpose programming language, meaning it has many uses and extensive features. It is used to power search engines, VR applications, air travel, game development, and movie production, and is most popular for building large software infrastructure and applications that run on limited resources.
+C++ was invented by Danish scientist Bjarne Stroustrup at AT&T Bell Labs in 1979. He was impressed by the program organization and concurrency features of Simula (another programming language) and wanted to implement them to C. This included the implementation of classes, public/private access control, constructors and destructors, friend classes, call and return functions (soon removed), and default arguments. The language was originally called "C with Classes" and then C84, but was finally changed to C++. C++ is a general-purpose programming language, meaning it has many uses and extensive features. It is also object-oriented. It is used to power search engines, VR applications, air travel, game development, and movie production, and is most popular for building large software infrastructure and applications that run on limited resources.
 
 Sources: \
 [C++ Introduction](https://www.w3schools.com/cpp/cpp_intro.asp)\
@@ -14,8 +14,8 @@ Sources: \
 # Installation and Setup
 
 1. Choose an IDE
-I will be using Visual Studio Code as my programming environment because the interface easy to use.
-Use this link to install [VS Code](https://code.visualstudio.com/download).
+/I will be using Visual Studio Code as my programming environment because the interface is easy to use.
+/Use this link to install [VS Code](https://code.visualstudio.com/download).
 
 2. Install the C/C++ extension for VS Code
 
@@ -32,7 +32,7 @@ ensure GCC is installed or download [GCC](https://code.visualstudio.com/docs/cpp
 
 # Your First C++ project
 
-This is your first programming project in C++! It will teach you the program's basic syntax through printing "Hello, World!"
+This is your first programming project in C++! Through printing "Hello, World!" you will learn the program's basic syntax. 
 
 Start by opening VS Code and creating a new .cpp file.
 
@@ -44,7 +44,7 @@ Start by opening VS Code and creating a new .cpp file.
 multiline comment */
 ```
 
-See my code [here](helloworld.cpp)
+Visit my code [here](helloworld.cpp) to learn how to print
 
 # Data Types and Naming Conventions
 
