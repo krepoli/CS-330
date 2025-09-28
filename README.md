@@ -54,12 +54,11 @@ C++ has built-in types for:
 * doubles
 * booleans
 * characters
+* strings
 * pointers
 * arrays
-Strings and dictionaries are not built-in but can be implemented through libraries.
+Dictionaries are not built-in but can be implemented through libraries.
 
 **Note:** C++ does not add new lines on its own. Use **\n** to create a new line.
 
-See these data types in my code [here](datatypes.cpp)
-
-Source: [Data Types in C++](https://www.geeksforgeeks.org/cpp/cpp-data-types/)
+See these data types in my code [here](dataTypes.cpp)
