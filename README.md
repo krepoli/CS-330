@@ -56,7 +56,7 @@ C++ has built-in types for:
 * characters
 * strings
 * pointers
-* arrays\
+* arrays
 
 Dictionaries are not built-in but can be implemented through libraries.
 
