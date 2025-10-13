@@ -16,8 +16,8 @@ Sources: \
 1. Choose an IDE
 
 
-I will be using Visual Studio Code as my programming environment because the interface is easy to use.\
-Use this link to install [VS Code](https://code.visualstudio.com/download).
+    I will be using Visual Studio Code as my programming environment because the interface is easy to use.\
+    Use this link to install [VS Code](https://code.visualstudio.com/download).
 
 2. Install the C/C++ extension for VS Code
 
