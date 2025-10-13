@@ -23,14 +23,14 @@ Use this link to install [VS Code](https://code.visualstudio.com/download).
 
 3. Install a Compiler
 
-**Windows:**
-download MinGW-w64 via [MSYS2](https://code.visualstudio.com/docs/cpp/config-mingw)
+    **Windows:**
+    download MinGW-w64 via [MSYS2](https://code.visualstudio.com/docs/cpp/config-mingw)
 
-**Mac:**
-ensure Clang is installed or download [Clang](https://code.visualstudio.com/docs/cpp/config-clang-mac)
+    **Mac:**
+    ensure Clang is installed or download [Clang](https://code.visualstudio.com/docs/cpp/config-clang-mac)
 
-**Linux:**
-ensure GCC is installed or download [GCC](https://code.visualstudio.com/docs/cpp/config-linux)
+    **Linux:**
+    ensure GCC is installed or download [GCC](https://code.visualstudio.com/docs/cpp/config-linux)
 
 # Coding Hello World
 
@@ -46,7 +46,7 @@ Start by opening VS Code and creating a new .cpp file.
 multiline comment */
 ```
 
-**Always Include at the Top**
+**Always Include:**
 ```cpp
 #include <iostream> // this is a header file library that allows input and output objects
 using namespace std; // this means we can use names for objects and variables
@@ -104,7 +104,9 @@ if (a == b) || (c == d) {
 * C++ supports switch statements which utilize "break" to exit the statement; "continue" does not work
 * There are 3 types of loops: for loops, while loops, and do while loops
 
-for loops and while loops are both entry-controlled loops, which means they must check if the condition is true before executing. The main difference between the two is that the number of iterations is known beforehand in a for loop, while this is based on the condition in a while loop. A do-while loop, on the other hand, is an exit-controlled loop, which means the loop executes one time before checking the condition. do-while loops are also based solely on condition.
+    * for loops and while loops are both entry-controlled loops, meaning they must check if the condition is true before executing
+    * a do-while loop is an exit-controlled loop, which means the loop executes one time before checking the condition
+    * the number of iterations is known beforehand in a for loop while this is based solely on condition in while and do while loops
 
 * Loop code block variables and function code block variables are treated the same, scope-wise and lifetime-wise. The key difference is that loop code block variables are created and destroyed within each iteration.
 
