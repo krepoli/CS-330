@@ -100,7 +100,7 @@ if (a == b) || (c == d) {
 }
 ```
 
-* The "dangling else" problem occurs in nested "if" statements where the "else" statement doesn't know which "if" to combine with. Make sure to use curly braces and indentation to prevent this problem
+* The **"dangling else" problem** occurs in nested "if" statements where the "else" statement doesn't know which "if" to combine with. Make sure to use curly braces and indentation to prevent this problem
 * C++ supports switch statements which utilize "break" to exit the statement; "continue" does not work
 * There are 3 types of loops: for loops, while loops, and do while loops
 
@@ -116,3 +116,44 @@ Sources: \
 [Loops in C++](https://www.geeksforgeeks.org/cpp/cpp-loops/)\
 [Short-circuit Evaluation in Programming](https://www.geeksforgeeks.org/c/short-circuit-evaluation-in-programming/)\
 [Dangling-else Ambiguity](https://www.geeksforgeeks.org/compiler-design/dangling-else-ambiguity/)
+
+# Functions
+
+Functions are used to perform repetitive actions in code. The creation of a function consists of two parts: the type of return value and the name of your function. Data, known as parameters, can be passed into a function within the parenthesis. **void** can be used instead of a type (such as int or string) when a function does not have a return value.
+
+**Syntax:**
+```cpp
+void myFunction() {
+
+}
+```
+
+A **main function** is used to call functions:
+
+```cpp
+int main() {
+    myFunction();
+    return 0;
+}
+```
+
+**Important Details:**
+
+* Functions must be declared before they are called.
+* C++ supports recursive functions.
+* C++ accepts multiple parameters of different data types. 
+* Multiple values can be returned at the same time using **pair**.
+* C++ is **pass-by-value**: the caller and the callee have 2 independent variables with the same value
+* During execution: arguments, parameters, and local variables declared within a function are stored in the stack through copies of their values. Local variables that are stored in pointers are stored through a reference to a heap on the stack (pointer stored in stack, value stored on heap).
+* Side-effects such as modifying global variables are possible and there are no guard rails against them.
+
+**Scope of Variables:**
+**Local Scope** - can only be accessed within the function it is created in
+**Global Scope** - can be accessed anywhere
+* variables with the same name inside and outside of a function will be treated as 2 seperate variables
+
+View my commented code [here](Functions.cpp)
+
+Sources: \
+[C++ Functions](https://www.w3schools.com/cpp/cpp_functions.asp)
+[C++ Variable Scope](https://www.w3schools.com/cpp/cpp_scope.asp)
