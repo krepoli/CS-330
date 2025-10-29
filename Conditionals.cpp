@@ -76,6 +76,31 @@ int main() {
             break;
     } 
     // Output: October
+
+    // LOOPS:
+
+    // for loop
+    for (int i = 1; i <= 5; i++) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+    // while loop
+    int j = 1; // initialize condition
+    while (j <= 5) {
+        cout << j << " ";
+        j++; // update condition
+    }
+    cout << endl;
+
+    // do while loop
+    int k = 1; // initialize condition
+    do {
+        cout << k << " ";
+        k++; // update condition
+    } while (k <= 5);
+
+    return 0;
 }
 
 /* Sources:
