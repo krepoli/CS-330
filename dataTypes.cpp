@@ -8,7 +8,7 @@ int main() {
 
     // floating point (decimal)
     float floating = 10.25;
-    cout << num << endl;
+    cout << floating << endl;
 
     // double (precision floating point)
     double e = 2.71828;
@@ -16,11 +16,13 @@ int main() {
 
     // boolean
     bool isTrue = true;
-    cout << isTrue << endl; // prints 1
+    cout << isTrue << endl; 
+    // Output: 1
     bool isFalse = false;
-    cout << isFalse << endl; // prints 0
+    cout << isFalse << endl; 
+    // Output: 0
 
-    // character (stores a single character)
+    // character
     char c = 'C';
     cout << c << endl;
 
@@ -28,9 +30,10 @@ int main() {
     string world = "Hello, World!";
     cout << world << endl;
 
-    /* pointer:
-    holds the memory address of another variable */
+    // pointer
     int* pointer = &num;
+    // num and *pointer = value
+    // &num and pointer = memory address
     cout << "Value of num: " << num << endl;
     cout << "Address of num: " << &num << endl;
     cout << "Value Stored in pointer: " << pointer << endl;
@@ -38,18 +41,30 @@ int main() {
 
     // arrays - you must always establish the size of an array
     string languages[3] = {"Python", "Java", "C"};
-    cout << languages[2] << endl;
+    cout << languages[2] << endl; 
+    // Output: C
     languages[2] = "C++";
-    cout << languages[2] << endl;
+    cout << languages[2] << endl; 
+    // Output: C++
 
 
     // mixed type operations
-    // recall: num = 10
 
-    cout << num + 5 << endl; // int + int
-    cout << num + floating << endl; // int + float
-    cout << num * e << endl; // int * double
-    cout << num << "5" << endl; // int + string
+     // int + int
+    cout << num + 5 << endl; 
+    // Output: 15
+
+    // int + float
+    cout << num + floating << endl; 
+    // Output: 20.25
+
+    // int * double
+    cout << num * e << endl; 
+    // Output: 27.1825
+
+    // int + string
+    cout << num << "5" << endl; 
+    // Output: 105
 
     return 0;
 }
