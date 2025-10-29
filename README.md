@@ -146,7 +146,7 @@ int main() {
 * C++ is **pass-by-value**: the caller and the callee have 2 independent variables with the same value
 * Arguments, parameters, and local variables declared within a function are stored in the stack during execution.
 * Pointers associated with local variables are stored through a reference to a heap on the stack (pointer stored in stack, value stored on heap).
-* Side-effects such as modifying global variables are possible and there are no guard rails against them.
+* Side-effects are possible and there are no guard rails against them.
 
 **Scope of Variables:**
 
