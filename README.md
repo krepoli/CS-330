@@ -144,7 +144,8 @@ int main() {
 * C++ accepts multiple parameters of different data types. 
 * Multiple values can be returned at the same time using **pair**.
 * C++ is **pass-by-value**: the caller and the callee have 2 independent variables with the same value
-* During execution: arguments, parameters, and local variables declared within a function are stored in the stack through copies of their values. Local variables that are stored in pointers are stored through a reference to a heap on the stack (pointer stored in stack, value stored on heap).
+* Arguments, parameters, and local variables declared within a function are stored in the stack during execution.
+* Pointers associated with local variables are stored through a reference to a heap on the stack (pointer stored in stack, value stored on heap).
 * Side-effects such as modifying global variables are possible and there are no guard rails against them.
 
 **Scope of Variables:**
