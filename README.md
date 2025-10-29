@@ -139,25 +139,22 @@ int main() {
 
 **Important Details:**
 
-* Functions must be declared before they are called.
-* C++ supports recursive functions.
-* C++ accepts multiple parameters of different data types. 
-* Multiple values can be returned at the same time using **pair**.
+* Functions must be declared before they are called
+* C++ supports recursive functions
+* Multiple parameters of different data types can be passed into a function
+* Multiple values can be returned at the same time using **pair**
 * C++ is **pass-by-value**: the caller and the callee have 2 independent variables with the same value
-* Arguments, parameters, and local variables declared within a function are stored in the stack during execution.
-* Pointers associated with local variables are stored through a reference to a heap on the stack (pointer stored in stack, value stored on heap).
-* Side-effects are possible and there are no guard rails against them.
+* Arguments, parameters, and local variables declared within a function are stored in the stack during execution
+* Pointers are stored through a reference to a heap on the stack (pointer stored in stack, value stored on heap)
+* Side-effects are possible and there are no guard rails against them
 
 **Scope of Variables:**
 
-
 * **Local Scope** - can only be accessed within the function it is created in
-
 
 * **Global Scope** - can be accessed anywhere
 
-
-* variables with the same name inside and outside of a function will be treated as 2 seperate variables
+* variables with the same name inside and outside of a function will be treated as 2 separate variables
 
 View my commented code [here](Functions.cpp)
 
