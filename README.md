@@ -159,5 +159,5 @@ int main() {
 View my commented code [here](Functions.cpp)
 
 Sources: \
-[C++ Functions](https://www.w3schools.com/cpp/cpp_functions.asp)
+[C++ Functions](https://www.w3schools.com/cpp/cpp_functions.asp) \
 [C++ Variable Scope](https://www.w3schools.com/cpp/cpp_scope.asp)
