@@ -148,8 +148,14 @@ int main() {
 * Side-effects such as modifying global variables are possible and there are no guard rails against them.
 
 **Scope of Variables:**
-**Local Scope** - can only be accessed within the function it is created in
-**Global Scope** - can be accessed anywhere
+
+
+* **Local Scope** - can only be accessed within the function it is created in
+
+
+* **Global Scope** - can be accessed anywhere
+
+
 * variables with the same name inside and outside of a function will be treated as 2 seperate variables
 
 View my commented code [here](Functions.cpp)
