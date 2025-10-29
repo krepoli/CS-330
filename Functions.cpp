@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-// takes in 2 numbers, multiplies them, and returns the output
+// multiplies 2 numbers and returns the product
 int mult(int a, int b) {
     return a * b;
 }
@@ -16,7 +16,7 @@ int fact(int f) {
     return f * fact(f - 1); // recursive case
 }
 
-// takes in a string, splits it in 2 by spaces, and returns both strings
+// splits a string in 2 at whitespace, and returns both words
 pair<string, string> splitString(string a) {
     stringstream ss(a);
     string word1, word2;
@@ -25,16 +25,20 @@ pair<string, string> splitString(string a) {
     return make_pair(word1, word2);
 }
 
-// store results of functions as variables and call in main to execute
+// store results of functions as variables in main
 int main() {
     int multiply = mult(5,10);
     cout << "5*10 = " << multiply << endl;
+    // Output: 50
     int factorial = fact(10);
     cout << "10! = " << factorial << endl;
-    // returns 2 values from 1 function
+    // Output: 3628800
     auto split = splitString("hello world");
     cout << "First Word: " << split.first << endl;
     cout << "Second Word: " << split.second << endl;
+    /* Output:
+    First Word: hello
+    Second Word: world */
     return 0;
 }
 
