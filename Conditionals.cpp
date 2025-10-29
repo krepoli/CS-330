@@ -84,6 +84,7 @@ int main() {
         cout << i << " ";
     }
     cout << endl;
+    // Output: 1 2 3 4 5
 
     // while loop
     int j = 1; // initialize condition
@@ -92,6 +93,7 @@ int main() {
         j++; // update condition
     }
     cout << endl;
+    // Output: 1 2 3 4 5
 
     // do while loop
     int k = 1; // initialize condition
@@ -99,6 +101,7 @@ int main() {
         cout << k << " ";
         k++; // update condition
     } while (k <= 5);
+    // Output: 1 2 3 4 5
 
     return 0;
 }
