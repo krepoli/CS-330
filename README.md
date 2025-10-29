@@ -32,9 +32,9 @@ Sources: \
     **Linux:**
     ensure GCC is installed or download [GCC](https://code.visualstudio.com/docs/cpp/config-linux)
 
-# Coding Hello World
+# Printing Hello World
 
-This is your first programming project in C++! Through printing "Hello, World!" you will learn the program's basic syntax. 
+This is your first programming project in C++! You will learn the program's basic syntax. 
 
 Start by opening VS Code and creating a new .cpp file.
 
