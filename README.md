@@ -169,7 +169,7 @@ Sources: \
 ```cpp
 // parent class
 class Person {
-    // do something
+
 };
 
 // child class
@@ -178,7 +178,7 @@ class Student : public Person {
 };
 ```
 
-** Inheriting attributes from Parent to Child: **
+**Inheriting Attributes from Parent to Child:**
 ```cpp
 public:
     // attributes
