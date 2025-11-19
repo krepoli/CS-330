@@ -164,8 +164,6 @@ Sources: \
 
 # Classes and Inheritance
 
-There is no standard function that allows information about objects to be printed such as toString() in Java or __str__ in python.
-
 **How to Implement Inheritance:**
 
 ```cpp
@@ -191,9 +189,10 @@ public:
     }
 ```
 
-C++ supports multiple inheritance
-Overloading does not work with inheritance
+* There is no standard function that allows information about objects to be printed such as toString() in Java or \__str\__ in python.
+* C++ supports multiple inheritance
+* Overloading does not work with inheritance
 
 
 Sources: \
-[Does overloading work with Inheritance?](https://www.geeksforgeeks.org/cpp/does-overloading-work-with-inheritance/) \
+[Does overloading work with Inheritance?](https://www.geeksforgeeks.org/cpp/does-overloading-work-with-inheritance/)
