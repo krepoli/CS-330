@@ -161,3 +161,39 @@ View my commented code [here](Functions.cpp)
 Sources: \
 [C++ Functions](https://www.w3schools.com/cpp/cpp_functions.asp) \
 [C++ Variable Scope](https://www.w3schools.com/cpp/cpp_scope.asp)
+
+# Classes and Inheritance
+
+There is no standard function that allows information about objects to be printed such as toString() in Java or __str__ in python.
+
+**How to Implement Inheritance:**
+
+```cpp
+// parent class
+class Person {
+    // do something
+};
+
+// child class
+class Student : public Person {
+
+};
+```
+
+** Inheriting attributes from Parent to Child: **
+```cpp
+public:
+    // attributes
+
+    Student(string n, double a)
+        : Person(n, a) {
+        // attributes of child class
+    }
+```
+
+C++ supports multiple inheritance
+Overloading does not work with inheritance
+
+
+Sources: \
+[Does overloading work with Inheritance?](https://www.geeksforgeeks.org/cpp/does-overloading-work-with-inheritance/) \
