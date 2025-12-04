@@ -47,7 +47,7 @@ multiline comment */
 using namespace std; // this means we can use names for objects and variables
 ```
 
-<ins>View my commented code [here](helloworld.cpp)</ins>
+**[View my Commented Code](helloworld.cpp)**
 
 # Data Types and Naming Conventions
 
