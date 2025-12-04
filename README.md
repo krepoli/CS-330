@@ -6,11 +6,6 @@ C++ is one of the most popular programming languages. It can be found today in o
 
 C++ was invented by Danish scientist Bjarne Stroustrup at AT&T Bell Labs in 1979. He was impressed by the program organization and concurrency features of Simula (another programming language) and wanted to implement them to C. This included the implementation of classes, public/private access control, constructors and destructors, friend classes, call and return functions (soon removed), and default arguments. C++ is a general-purpose programming language, meaning it has many uses and extensive features. It is also object-oriented. It is used to power search engines, VR applications, air travel, game development, and movie production, and is most popular for building large software infrastructure and applications that run on limited resources.
 
-Sources: \
-[C++ Introduction](https://www.w3schools.com/cpp/cpp_intro.asp)\
-[A Brief History of C++](https://www.perforce.com/blog/qac/misra-cpp-history#introduction-c-history)\
-[What is C++ Used For?](https://www.codecademy.com/resources/blog/what-is-c-plus-plus-used-for)
-
 # Installation and Setup
 
 1. Choose an IDE
@@ -112,11 +107,6 @@ if (a == b) || (c == d) {
 
 View my commented code [here](Conditionals.cpp)
 
-Sources: \
-[Loops in C++](https://www.geeksforgeeks.org/cpp/cpp-loops/)\
-[Short-circuit Evaluation in Programming](https://www.geeksforgeeks.org/c/short-circuit-evaluation-in-programming/)\
-[Dangling-else Ambiguity](https://www.geeksforgeeks.org/compiler-design/dangling-else-ambiguity/)
-
 # Functions
 
 Functions are used to perform repetitive actions in code. The creation of a function consists of two parts: the type of return value and the name of your function. Data, known as parameters, can be passed into a function within the parenthesis. **void** can be used instead of a type (such as int or string) when a function does not have a return value.
@@ -158,10 +148,6 @@ int main() {
 
 View my commented code [here](Functions.cpp)
 
-Sources: \
-[C++ Functions](https://www.w3schools.com/cpp/cpp_functions.asp) \
-[C++ Variable Scope](https://www.w3schools.com/cpp/cpp_scope.asp)
-
 # Classes and Inheritance
 
 **How to Implement Inheritance:**
@@ -189,10 +175,17 @@ public:
     }
 ```
 
-* There is no standard function that allows information about objects to be printed such as toString() in Java or \__str\__ in python.
+* There is no standard function that allows information about objects to be printed such as toString() in Java or \_\_str\_\_ in python.
 * C++ supports multiple inheritance
 * Overloading does not work with inheritance
 
-
-Sources: \
+# Sources:
+[C++ Introduction](https://www.w3schools.com/cpp/cpp_intro.asp)\
+[A Brief History of C++](https://www.perforce.com/blog/qac/misra-cpp-history#introduction-c-history)\
+[What is C++ Used For?](https://www.codecademy.com/resources/blog/what-is-c-plus-plus-used-for)\
+[C++ Functions](https://www.w3schools.com/cpp/cpp_functions.asp)\
+[C++ Variable Scope](https://www.w3schools.com/cpp/cpp_scope.asp)\
+[Loops in C++](https://www.geeksforgeeks.org/cpp/cpp-loops/)\
+[Short-circuit Evaluation in Programming](https://www.geeksforgeeks.org/c/short-circuit-evaluation-in-programming/)\
+[Dangling-else Ambiguity](https://www.geeksforgeeks.org/compiler-design/dangling-else-ambiguity/)\
 [Does overloading work with Inheritance?](https://www.geeksforgeeks.org/cpp/does-overloading-work-with-inheritance/)
