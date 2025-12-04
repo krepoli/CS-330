@@ -47,6 +47,8 @@ multiline comment */
 using namespace std; // this means we can use names for objects and variables
 ```
 
+**Note:** * C++ does not add new lines on its own. Use **<< endl** to create a new line.
+
 **[View my Commented Code Here](helloworld.cpp)**
 
 # Data Types and Naming Conventions
@@ -63,10 +65,6 @@ C++ has built-in types for:
 
 Dictionaries are not built-in but can be implemented through libraries.
 
-**Note:** C++ does not add new lines on its own. Use **<< endl** to create a new line.
-
-**[View my Commented Code Here](dataTypes.cpp)**
-
 **Important Notes:**
 * View [this link](https://www.geeksforgeeks.org/cpp/cpp-keywords/) to learn the reserved words
 * Variables can contain letters, digits, and underscores and must begin with a letter or an underscore
@@ -77,6 +75,8 @@ Dictionaries are not built-in but can be implemented through libraries.
 * Operators available include: +, -, *, /, %, ++, --, ==, >, <, >=, <=, !=, &&, ||
 * Mixed type operations are allowed
 * Identifier names and operator symbols are bound at compile time
+
+**[View my Commented Code Here](dataTypes.cpp)**
 
 # Selection, Loops, and Conditionals
 
