@@ -7,7 +7,7 @@ C++ is one of the most popular programming languages. It can be found today in o
 1. [History](#history)
 2. [Installation and Setup](#installation-and-setup)
 3. [Printing Hello World](#printing-hello-world)
-4. [Selection, Loops, and Conditionals](#selection,-loops,-and-conditionals)
+4. [Selection, Loops, and Conditionals](#selection-loops-and-conditionals)
 5. [Functions](#functions)
 6. [Classes and Inheritance](#classes-and-inheritance)
 7. [Sources](#sources)
