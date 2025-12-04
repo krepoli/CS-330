@@ -47,7 +47,7 @@ multiline comment */
 using namespace std; // this means we can use names for objects and variables
 ```
 
-**[View my Commented Code](helloworld.cpp)**
+**[View my Commented Code Here](helloworld.cpp)**
 
 # Data Types and Naming Conventions
 
@@ -65,7 +65,7 @@ Dictionaries are not built-in but can be implemented through libraries.
 
 **Note:** C++ does not add new lines on its own. Use **<< endl** to create a new line.
 
-View my commented code [here](dataTypes.cpp)
+**[View my Commented Code Here](dataTypes.cpp)**
 
 **Important Notes:**
 * View [this link](https://www.geeksforgeeks.org/cpp/cpp-keywords/) to learn the reserved words
@@ -105,7 +105,7 @@ if (a == b) || (c == d) {
 
 * Loop code block variables and function code block variables are treated the same, scope-wise and lifetime-wise. The key difference is that loop code block variables are created and destroyed within each iteration.
 
-View my commented code [here](Conditionals.cpp)
+**[View my Commented Code Here](Conditionals.cpp)**
 
 # Functions
 
@@ -146,7 +146,7 @@ int main() {
 
 * variables with the same name inside and outside of a function will be treated as 2 separate variables
 
-View my commented code [here](Functions.cpp)
+**[View my Commented Code Here](Functions.cpp)**
 
 # Classes and Inheritance
 
@@ -178,6 +178,8 @@ public:
 * There is no standard function that allows information about objects to be printed such as toString() in Java or \_\_str\_\_ in python.
 * C++ supports multiple inheritance
 * Overloading does not work with inheritance
+
+**[View my Commented Code Here](classesInheritance.cpp)**
 
 # Sources:
 [C++ Introduction](https://www.w3schools.com/cpp/cpp_intro.asp)\
