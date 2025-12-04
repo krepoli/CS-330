@@ -2,6 +2,15 @@
 
 C++ is one of the most popular programming languages. It can be found today in operating systems, Graphical User Interfaces, and embedded systems. This project is for my CS 330 Structure and Organization of Programming Languages class at Simmons University. I will provide a tutorial on how to code in C++.
 
+# Table of Contents
+
+1. [History](#history)
+2. [Installation and Setup](#installation-and-setup)
+3. [Printing Hello World](#printing-hello-world)
+4. [Selection, Loops, and Conditionals](#selection-loops,and-conditionals)
+5. [Functions](#functions)
+6. [Classes and Inheritance](#classes-and-inheritance)
+
 # History
 
 C++ was invented by Danish scientist Bjarne Stroustrup at AT&T Bell Labs in 1979. He was impressed by the program organization and concurrency features of Simula (another programming language) and wanted to implement them to C. This included the implementation of classes, public/private access control, constructors and destructors, friend classes, call and return functions (soon removed), and default arguments. C++ is a general-purpose programming language, meaning it has many uses and extensive features. It is also object-oriented. It is used to power search engines, VR applications, air travel, game development, and movie production, and is most popular for building large software infrastructure and applications that run on limited resources.
@@ -47,7 +56,7 @@ multiline comment */
 using namespace std; // this means we can use names for objects and variables
 ```
 
-**Note:** * C++ does not add new lines on its own. Use **<< endl** to create a new line.
+**Note:** C++ does not add new lines on its own. Use **<< endl** to create a new line.
 
 **[View my Commented Code Here](helloworld.cpp)**
 
@@ -97,9 +106,9 @@ if (a == b) || (c == d) {
 
 * The **"dangling else" problem** occurs in nested "if" statements where the "else" statement doesn't know which "if" to combine with. Make sure to use curly braces and indentation to prevent this problem
 * C++ supports switch statements which utilize "break" to exit the statement; "continue" does not work
-* There are 3 types of loops: for loops, while loops, and do while loops
+* There are 3 types of loops: **for loops, while loops, and do while loops**
 
-    * for loops and while loops are both entry-controlled loops, meaning they must check if the condition is true before executing
+    * for loops and while loops are entry-controlled loops, meaning they must check if the condition is true before executing
     * a do-while loop is an exit-controlled loop, which means the loop executes one time before checking the condition
     * the number of iterations is known beforehand in a for loop while this is based solely on condition in while and do while loops
 
