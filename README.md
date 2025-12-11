@@ -76,7 +76,7 @@ C++ has built-in types for:
 Dictionaries are not built-in but can be implemented through libraries.
 
 **Important Notes:**
-* View [this link](https://www.geeksforgeeks.org/cpp/cpp-keywords/) to learn the reserved words
+* View this link to learn the [reserved words](https://www.geeksforgeeks.org/cpp/cpp-keywords/)
 * Variables can contain letters, digits, and underscores and must begin with a letter or an underscore
 * Statically Typed: data types must be declared when assigning variables
 * Strongly Typed: strict about data type conversion
@@ -91,29 +91,66 @@ Dictionaries are not built-in but can be implemented through libraries.
 # Selection, Loops, and Conditionals
 
 **Overview:**
-* Boolean values are expressed as true and false (MUST BE LOWERCASE) but are printed as 1 and 0
 * Conditional statements are if/else and if/elseif/else
-* Code blocks are delimited under each condition using curly braces {}
+* There are 3 types of loops: **for loops, while loops, and do while loops**
+* C++ supports switch statements which utilize "break" to exit the statement; "continue" does not work
+* Boolean values are expressed as true and false (MUST BE LOWERCASE) but are printed as 1 and 0
+* Code blocks are delimited under each condition using curly braces { }
 * C++ uses short-circuit evaluation, meaning the compiler stops evaluating logical expressions as soon as the value is determined
+* The **"dangling else" problem** occurs in nested "if" statements where the "else" statement doesn't know which "if" to combine with (make sure to use curly braces and indentation to prevent this problem)
+* Loop code block variables and function code block variables are treated the same, scope-wise and lifetime-wise. The key difference is that loop code block variables are created and destroyed within each iteration.
 
-Short-Circuit Example:
+**Conditionals:**
 ```cpp
-// if (a == b) is true, the compiler won't evaluate (c == d)
+// if else
+if (condition) {
+    
+} else {
+    
+}
+
+// if elif else
+if (condition) {
+    
+} else if (condition) {
+    
+} else {
+    
+}
+```
+
+**Short-Circuit Example:**
+if (a == b) is true, the compiler won't evaluate (c == d)
+```cpp
 
 if (a == b) || (c == d) {
     // something happens
 }
 ```
 
-* The **"dangling else" problem** occurs in nested "if" statements where the "else" statement doesn't know which "if" to combine with. Make sure to use curly braces and indentation to prevent this problem
-* C++ supports switch statements which utilize "break" to exit the statement; "continue" does not work
-* There are 3 types of loops: **for loops, while loops, and do while loops**
+**Loops:**
 
-    * for loops and while loops are entry-controlled loops, meaning they must check if the condition is true before executing
-    * a do-while loop is an exit-controlled loop, which means the loop executes one time before checking the condition
-    * the number of iterations is known beforehand in a for loop while this is based solely on condition in while and do while loops
+* in a for loop: the number of iterations is known beforehand
+* in while and do while loops: the number of iterations is based solely on condition
+* for loops and while loops are entry-controlled loops, meaning they must check if the condition is true before executing
 
-* Loop code block variables and function code block variables are treated the same, scope-wise and lifetime-wise. The key difference is that loop code block variables are created and destroyed within each iteration.
+```cpp
+for (initialization; condition; update) {
+    // do something
+}
+
+while (condition) {
+    // do something
+}
+```
+
+* a do-while loop is an exit-controlled loop, which means the loop executes one time before checking the condition
+
+```cpp
+do {
+    // something
+} while (condition);
+```
 
 **[View my Commented Code Here](Conditionals.cpp)**
 
@@ -128,7 +165,7 @@ void myFunction() {
 }
 ```
 
-A **main function** is used to call functions:
+A **main function** is used to call other functions:
 
 ```cpp
 int main() {
@@ -185,7 +222,7 @@ public:
     }
 ```
 
-* There is no standard function that allows information about objects to be printed such as toString() in Java or \_\_str\_\_ in python.
+* There is no standard function that allows information about objects to be printed such as toString() in Java or \_\_str\_\_() in python.
 * C++ supports multiple inheritance
 * Overloading does not work with inheritance
 
