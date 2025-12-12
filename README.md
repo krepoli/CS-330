@@ -90,38 +90,37 @@ Dictionaries are not built-in but can be implemented through libraries.
 
 # Selection, Loops, and Conditionals
 
-**IOverview:**
-* C++ supports switch statements which utilize "break" to exit the statement; "continue" does not work
-* Boolean values are expressed as true and false (MUST BE LOWERCASE) but are printed as 1 and 0
-* Code blocks are delimited under each condition using curly braces { }
-* C++ uses short-circuit evaluation, meaning the compiler stops evaluating logical expressions as soon as the value is determined
-* The **"dangling else" problem** occurs in nested "if" statements where the "else" statement doesn't know which "if" to combine with (make sure to use curly braces and indentation to prevent this problem)
-* Loop code block variables and function code block variables are treated the same, scope-wise and lifetime-wise. The key difference is that loop code block variables are created and destroyed within each iteration.
+**Overview**
+* C++ supports `switch` statements which utilize "break" to exit a case.<br>(*"continue" does NOT work in a switch*)
+* Boolean values are expressed as `true` and `false` (lowercase) but are printed as `1` and `0`.
+* Code blocks are delimited under each condition using curly braces `{ }`.
+* C++ uses **short-circuit evaluation**: evaluation stops as soon as the result is known.
+* The **"dangling else" problem"** occurs in nested `if` statements when an `else` could combine with the wrong `if`<br>(*use curly braces and indentation to avoid this*)
+* **Variable scope** in loops is the same as function-block scoping; loop code block variables are created and destroyed each iteration.
 
-**Conditionals:**
+## Conditionals:
 
-if-else:
+`if-else`
 ```cpp
-// if-else
 if (condition) {
-    
+    // code
 } else {
-    
+    // code
 }
 ```
 
-if-else-if:
+`if-else-if`
 ```cpp
 if (condition) {
-    
+    // code
 } else if (condition) {
-    
+    // code
 } else {
-    
+    // code
 }
 ```
 
-switch:
+`switch`
 ```cpp
 switch (expression) {
     case 1:
@@ -136,10 +135,9 @@ switch (expression) {
 }
 ```
 
-**Short-Circuit Example:**
+## Short-Circuit Evaluation
 
-
-if (a == b) is true, the compiler won't evaluate (c == d)
+if `(a == b)` is true, `(c == d)` will **not** be evaluated:
 ```cpp
 
 if (a == b) || (c == d) {
@@ -147,24 +145,29 @@ if (a == b) || (c == d) {
 }
 ```
 
-**Loops:**
+## Loops
 
-* in a for loop: the number of iterations is known beforehand
-* in while and do while loops: the number of iterations is based solely on condition
-* for loops and while loops are entry-controlled loops: they must check if the condition is true before executing
+**General Rules**
+* **For loops**: number of iterations is known ahead of time
+* **While** and **do-while loops**: number of iterations is based solely on condition
+* `for` and `while` are **entry-controlled** (condition checked first)
+* `do-while` is **exit-controlled** (execute once before checking condition)
 
+`for` Loop
 ```cpp
 for (initialization; condition; update) {
     // do something
 }
+```
 
+`while` Loop
+```cpp
 while (condition) {
     // do something
 }
 ```
 
-* a do-while loop is an exit-controlled loop: the loop executes one time before checking the condition
-
+`do-while` Loop
 ```cpp
 do {
     // something
