@@ -95,8 +95,8 @@ Dictionaries are not built-in but can be implemented through libraries.
 * Boolean values are expressed as `true` and `false` (lowercase) but are printed as `1` and `0`.
 * Code blocks are delimited under each condition using curly braces `{ }`.
 * C++ uses **short-circuit evaluation**: evaluation stops as soon as the result is known.
-* The **"dangling else" problem"** occurs in nested `if` statements when an `else` could combine with the wrong `if`<br>(*use curly braces and indentation to avoid this*)
-* **Variable scope** in loops is the same as function-block scoping; loop code block variables are created and destroyed each iteration.
+* The **"dangling else" problem"** occurs in nested `if` statements when an `else` combines with the wrong `if`<br>(*use curly braces and indentation to avoid this*)
+* **Variable scope in loops** is the same as function-block scoping.<br>Loop code block variables are created and destroyed each iteration.
 
 ## Conditionals:
 
@@ -148,10 +148,10 @@ if (a == b) || (c == d) {
 ## Loops
 
 **General Rules**
-* **For loops**: number of iterations is known ahead of time
-* **While** and **do-while loops**: number of iterations is based solely on condition
-* `for` and `while` are **entry-controlled** (condition checked first)
-* `do-while` is **exit-controlled** (execute once before checking condition)
+* **For loops**: number of iterations is known ahead of time.
+* **While** and **do-while loops**: number of iterations is based solely on condition.
+* for and while are **entry-controlled** (condition checked first).
+* do-while is **exit-controlled** (execute once before checking condition).
 
 `for` Loop
 ```cpp
