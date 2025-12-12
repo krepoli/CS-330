@@ -90,9 +90,7 @@ Dictionaries are not built-in but can be implemented through libraries.
 
 # Selection, Loops, and Conditionals
 
-**Overview:**
-* Conditional statements are if/else and if/elseif/else
-* There are 3 types of loops: **for loops, while loops, and do while loops**
+**IOverview:**
 * C++ supports switch statements which utilize "break" to exit the statement; "continue" does not work
 * Boolean values are expressed as true and false (MUST BE LOWERCASE) but are printed as 1 and 0
 * Code blocks are delimited under each condition using curly braces { }
@@ -101,15 +99,19 @@ Dictionaries are not built-in but can be implemented through libraries.
 * Loop code block variables and function code block variables are treated the same, scope-wise and lifetime-wise. The key difference is that loop code block variables are created and destroyed within each iteration.
 
 **Conditionals:**
+
+if-else:
 ```cpp
-// if else
+// if-else
 if (condition) {
     
 } else {
     
 }
+```
 
-// if elif else
+if-else-if:
+```cpp
 if (condition) {
     
 } else if (condition) {
@@ -119,7 +121,24 @@ if (condition) {
 }
 ```
 
+switch:
+```cpp
+switch (expression) {
+    case 1:
+        // code
+        break;
+    case 2:
+        // code
+        break;
+    default:
+        // code
+        break;
+}
+```
+
 **Short-Circuit Example:**
+
+
 if (a == b) is true, the compiler won't evaluate (c == d)
 ```cpp
 
@@ -132,7 +151,7 @@ if (a == b) || (c == d) {
 
 * in a for loop: the number of iterations is known beforehand
 * in while and do while loops: the number of iterations is based solely on condition
-* for loops and while loops are entry-controlled loops, meaning they must check if the condition is true before executing
+* for loops and while loops are entry-controlled loops: they must check if the condition is true before executing
 
 ```cpp
 for (initialization; condition; update) {
@@ -144,7 +163,7 @@ while (condition) {
 }
 ```
 
-* a do-while loop is an exit-controlled loop, which means the loop executes one time before checking the condition
+* a do-while loop is an exit-controlled loop: the loop executes one time before checking the condition
 
 ```cpp
 do {
