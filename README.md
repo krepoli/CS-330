@@ -63,7 +63,7 @@ using namespace std; // this means we can use names for objects and variables
 
 # Data Types and Naming Conventions
 
-**Built-in Data Types**
+### Built-in Data Types
 * Integers (`int`)
 * Floating-points (`float`)
 * Doubles (`double`)
@@ -80,17 +80,15 @@ Dictionaries are **not built-in** but can be implemented through libraries.
 Data types must be declared when variables are defined.
 * **Strongly Typed**<br>
 C++ enforces strict data type conversion.
-* **Explicitly Types**<br>
+* **Explicitly Typed**<br>
 Variables require specified data types.
 
 ### Variable Naming Rules
 * Variable names can contain:
-    * Letters(`a-z`,`A-Z`)
-    * Digits(`0-9`)
-    * Underscores(`_`)
-* Variable names **must begin** with:
-    * A letter, or
-    * An underscore
+    * Letters (`a-z`,`A-Z`)
+    * Digits (`0-9`)
+    * Underscores (`_`)
+* Variable names **must begin** with a letter or an underscore.
 * Variable names **cannot** be reserved words.
 
 [View the list of C++ reserved words](https://www.geeksforgeeks.org/cpp/cpp-keywords/)
@@ -119,23 +117,29 @@ C++ supports a wide range of operators, including:
 &&    ||
 ```
 * Mixed type operations are allowed.
-* Identifier names and operator symbols are **bound at compile time**
+* Identifier names and operator symbols are **bound at compile time.**
+
+### Example Code
 
 **[View my Commented Code Here](dataTypes.cpp)**
 
 # Selection, Loops, and Conditionals
 
-**Overview**
-* C++ supports `switch` statements which utilize "break" to exit a case.<br>(*"continue" does NOT work in a switch*)
-* Boolean values are expressed as `true` and `false` (lowercase) but are printed as `1` and `0`.
+### Overview
+* C++ supports `switch` statements which utilize "break" to exit a case.<br>
+("continue" **does not work** in a switch)
+* Boolean values are written as `true` and `false` (lowercase) but appear as as `1` and `0` when printed.
 * Code blocks are delimited under each condition using curly braces `{ }`.
-* C++ uses **short-circuit evaluation**: evaluation stops as soon as the result is known.
-* The **"dangling else" problem"** occurs in nested if statements when an else combines with the wrong if.<br>(*use curly braces and indentation to avoid this*)
-* **Variable scope in loops** is the same as function-block scoping.<br>Loop code block variables are created and destroyed each iteration.
+* C++ uses **short-circuit evaluation**<br>
+Evaluation stops as soon as the result is known.
+* The **"dangling else" problem"** occurs in nested if statements when an else combines with the wrong if.<br>
+Use curly braces and proper indentation to avoid this.
+* **Variable scope in loops** is the same as function-block scoping.<br>
+Loop code block variables are created and destroyed each iteration.
 
-## Conditionals
+### Conditionals
 
-`if-else`
+`if / else`
 ```cpp
 if (condition) {
     // code
@@ -144,7 +148,7 @@ if (condition) {
 }
 ```
 
-`if-else-if`
+`if / else if / else`
 ```cpp
 if (condition) {
     // code
@@ -170,7 +174,7 @@ switch (expression) {
 }
 ```
 
-## Short-Circuit Evaluation
+### Short-Circuit Evaluation
 
 if `(a == b)` is true, `(c == d)` will **not** be evaluated:
 ```cpp
@@ -180,13 +184,15 @@ if (a == b) || (c == d) {
 }
 ```
 
-## Loops
+### Loops
 
 **General Rules**
-* **For loops**: number of iterations is known ahead of time.
-* **While** and **do-while loops**: number of iterations is based solely on condition.
-* for and while are **entry-controlled** (condition checked first).
-* do-while is **exit-controlled** (execute once before checking condition).
+* `for` loops: used when the number of iterations is known in advance
+* `while` and `do-while` loops: used when iteration depends on a condition.
+* **Entry-controlled loops**
+    * `for`, `while` - condition is checked before execution
+* **Exit-controlled loops**
+    * `do-while` - loop executes once before checking condition
 
 `for` Loop
 ```cpp
@@ -209,20 +215,28 @@ do {
 } while (condition);
 ```
 
+### Example Code
+
 **[View my Commented Code Here](Conditionals.cpp)**
 
 # Functions
 
-Functions are used to perform repetitive actions in code. The creation of a function consists of two parts: the type of return value and the name of your function. Data, known as parameters, can be passed into a function within the parenthesis. **void** can be used instead of a type (such as int or string) when a function does not have a return value.
+Functions are used to perform **repetitive or reusable** actions in code.
+A function definition consists of:
+1. A return type
+2. A function name
+3. Optional parameters (inside parentheses)
+If a function does not return a value, `void` can be used instead of a data type.
 
-**Syntax:**
+### Basic Syntax
 ```cpp
 void myFunction() {
-
+    // function body
 }
 ```
 
-A **main function** is used to call other functions:
+### The Main Function
+A `main` function is the **entry point** of a C++ program and is responsible for calling other functions.
 
 ```cpp
 int main() {
@@ -231,24 +245,33 @@ int main() {
 }
 ```
 
-**Important Details:**
+### Important Details
 
-* Functions must be declared before they are called
-* C++ supports recursive functions
-* Multiple parameters of different data types can be passed into a function
-* Multiple values can be returned at the same time using **pair**
-* C++ is **pass-by-value**: the caller and the callee have 2 independent variables with the same value
-* Arguments, parameters, and local variables declared within a function are stored in the stack during execution
-* Pointers are stored through a reference to a heap on the stack (pointer stored in stack, value stored on heap)
-* Side-effects are possible and there are no guard rails against them
+* Functions must be declared before they are called.
+* C++ supports **recursive functions.**
+* Functions can accept **multiple parameters of different data types.**
+* Multiple values can be returned at the same time using `pair`
+* C++ is **pass-by-value**
 
-**Scope of Variables:**
+    * The caller and the callee each have independent copies of variables.
 
-* **Local Scope** - can only be accessed within the function it is created in
+* Arguments, parameters, and local variables are stored on the stack during execution.
+* Pointers: the pointer itself is stored on the stack and the data it points to is stored on the heap
+* **Side-effects are possible** and there are no guard rails against them
 
-* **Global Scope** - can be accessed anywhere
+### Variables Scope
 
-* variables with the same name inside and outside of a function will be treated as 2 separate variables
+**Local Scope**
+* Variables declared inside a function.
+* Accessible only within that function.
+
+**Global Scope**
+* Variables declared outside all functions.
+* Accessible from anywhere in the program.
+
+Variables with the same name inside and outside of a function are treated as 2 separate variables.
+
+### Example Code
 
 **[View my Commented Code Here](Functions.cpp)**
 
