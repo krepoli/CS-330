@@ -76,11 +76,11 @@ using namespace std; // this means we can use names for objects and variables
 Dictionaries are **not built-in** but can be implemented through libraries.
 
 ### Language Characteristics
-* **Statically Typed**
+* **Statically Typed**<br>
 Data types must be declared when variables are defined.
-* **Strongly Typed**
+* **Strongly Typed**<br>
 C++ enforces strict data type conversion.
-* **Explicitly Types**
+* **Explicitly Types**<br>
 Variables require specified data types.
 
 ### Variable Naming Rules
