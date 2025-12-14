@@ -63,28 +63,63 @@ using namespace std; // this means we can use names for objects and variables
 
 # Data Types and Naming Conventions
 
-C++ has built-in types for:
-* integers
-* floating-points
-* doubles
-* booleans
-* characters
-* strings
-* pointers
-* arrays
+**Built-in Data Types**
+* Integers (`int`)
+* Floating-points (`float`)
+* Doubles (`double`)
+* Booleans (`bool`)
+* Characters (`char`)
+* Strings (`string`)
+* Pointers
+* Arrays
 
-Dictionaries are not built-in but can be implemented through libraries.
+Dictionaries are **not built-in** but can be implemented through libraries.
 
-**Important Notes:**
-* View this link to learn the [reserved words](https://www.geeksforgeeks.org/cpp/cpp-keywords/)
-* Variables can contain letters, digits, and underscores and must begin with a letter or an underscore
-* Statically Typed: data types must be declared when assigning variables
-* Strongly Typed: strict about data type conversion
-* Explicitly Typed: requires specific details such as variable types
-* Strings, primitives, etc. are all mutable unless specified "const"
-* Operators available include: +, -, *, /, %, ++, --, ==, >, <, >=, <=, !=, &&, ||
-* Mixed type operations are allowed
-* Identifier names and operator symbols are bound at compile time
+### Language Characteristics
+* **Statically Typed**
+Data types must be declared when variables are defined.
+* **Strongly Typed**
+C++ enforces strict data type conversion.
+* **Explicitly Types**
+Variables require specified data types.
+
+### Variable Naming Rules
+* Variable names can contain:
+    * Letters(`a-z`,`A-Z`)
+    * Digits(`0-9`)
+    * Underscores(`_`)
+* Variable names **must begin** with:
+    * A letter, or
+    * An underscore
+* Variable names **cannot** be reserved words.
+
+[View the list of C++ reserved words](https://www.geeksforgeeks.org/cpp/cpp-keywords/)
+
+### Mutability
+* By default, **strings, primitives, and other variables** are mutable.
+* Use `const` keyword to declare something unmutable.
+
+### Operators
+C++ supports a wide range of operators, including:
+
+**Arithmetic**
+```cpp
++    -    *    /    %
+```
+**Increment/Decrement**
+```cpp
+++    --
+```
+**Comparison**
+```cpp
+==    !=    >    <    >=    <=
+```
+**Logical**
+```cpp
+&&    ||
+```
+* Mixed type operations are allowed.
+* Identifier names and operator symbols are **bound at compile time**
 
 **[View my Commented Code Here](dataTypes.cpp)**
 
@@ -95,10 +130,10 @@ Dictionaries are not built-in but can be implemented through libraries.
 * Boolean values are expressed as `true` and `false` (lowercase) but are printed as `1` and `0`.
 * Code blocks are delimited under each condition using curly braces `{ }`.
 * C++ uses **short-circuit evaluation**: evaluation stops as soon as the result is known.
-* The **"dangling else" problem"** occurs in nested `if` statements when an `else` combines with the wrong `if`.<br>(*use curly braces and indentation to avoid this*)
+* The **"dangling else" problem"** occurs in nested if statements when an else combines with the wrong if.<br>(*use curly braces and indentation to avoid this*)
 * **Variable scope in loops** is the same as function-block scoping.<br>Loop code block variables are created and destroyed each iteration.
 
-## Conditionals:
+## Conditionals
 
 `if-else`
 ```cpp
