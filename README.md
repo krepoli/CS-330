@@ -128,7 +128,7 @@ C++ supports a wide range of operators, including:
 ### Overview
 * C++ supports `switch` statements which utilize "break" to exit a case.<br>
 ("continue" **does not work** in a switch)
-* Boolean values are written as `true` and `false` (lowercase) but appear as as `1` and `0` when printed.
+* Boolean values are written as `true` and `false` (lowercase) but appear as `1` and `0` when printed.
 * Code blocks are delimited under each condition using curly braces `{ }`.
 * C++ uses **short-circuit evaluation**<br>
 Evaluation stops as soon as the result is known.
@@ -187,7 +187,7 @@ if (a == b) || (c == d) {
 ### Loops
 
 **General Rules**
-* `for` loops: used when the number of iterations is known in advance
+* `for` loops: used when the number of iterations is known in advance.
 * `while` and `do-while` loops: used when iteration depends on a condition.
 * **Entry-controlled loops**
     * `for`, `while` - condition is checked before execution
@@ -222,11 +222,15 @@ do {
 # Functions
 
 Functions are used to perform **repetitive or reusable** actions in code.
+
+
 A function definition consists of:
-1. A return type
-2. A function name
-3. Optional parameters (inside parentheses)
-If a function does not return a value, `void` can be used instead of a data type.
+1. **return type**
+2. **function name**
+3. **optional parameters** (inside parentheses)
+
+
+If a function does not return a value, `void` is used instead of a data type.
 
 ### Basic Syntax
 ```cpp
@@ -235,7 +239,7 @@ void myFunction() {
 }
 ```
 
-### The Main Function
+### Main Function
 A `main` function is the **entry point** of a C++ program and is responsible for calling other functions.
 
 ```cpp
@@ -252,9 +256,7 @@ int main() {
 * Functions can accept **multiple parameters of different data types.**
 * Multiple values can be returned at the same time using `pair`
 * C++ is **pass-by-value**
-
     * The caller and the callee each have independent copies of variables.
-
 * Arguments, parameters, and local variables are stored on the stack during execution.
 * Pointers: the pointer itself is stored on the stack and the data it points to is stored on the heap
 * **Side-effects are possible** and there are no guard rails against them
