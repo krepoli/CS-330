@@ -254,12 +254,12 @@ int main() {
 * Functions must be declared before they are called.
 * C++ supports **recursive functions.**
 * Functions can accept **multiple parameters of different data types.**
-* Multiple values can be returned at the same time using `pair`
+* Multiple values can be returned at the same time using `pair`.
 * C++ is **pass-by-value**
     * The caller and the callee each have independent copies of variables.
 * Arguments, parameters, and local variables are stored on the stack during execution.
-* Pointers: the pointer itself is stored on the stack and the data it points to is stored on the heap
-* **Side-effects are possible** and there are no guard rails against them
+* Pointers: the pointer itself is stored on the stack and the data it points to is stored on the heap.
+* **Side-effects are possible** and there are no guard rails against them.
 
 ### Variables Scope
 
