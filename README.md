@@ -43,7 +43,7 @@ This is your first programming project in C++! You will learn the program's basi
 
 Start by opening VS Code and creating a new .cpp file.
 
-**How to Comment on your Code:**
+### Commenting on Code
 ```cpp
 // this is a comment
 
@@ -51,13 +51,21 @@ Start by opening VS Code and creating a new .cpp file.
 multiline comment */
 ```
 
-**Always Include:**
+### Always Include
+* <iostream> is a header file library that allows input and output objects
+* namespace std allows objects and variables to be named
+
 ```cpp
-#include <iostream> // this is a header file library that allows input and output objects
-using namespace std; // this means we can use names for objects and variables
+#include <iostream>
+using namespace std;
 ```
 
 **Note:** C++ does not add new lines on its own. Use **<< endl** to create a new line.
+```cpp
+cout << "Hello World!" << endl;
+```
+
+### Example Code
 
 **[View my Commented Code Here](helloworld.cpp)**
 
@@ -279,21 +287,23 @@ Variables with the same name inside and outside of a function are treated as 2 s
 
 # Classes and Inheritance
 
-**How to Implement Inheritance:**
+### Inheritance
 
+`parent` class
 ```cpp
-// parent class
 class Person {
-
-};
-
-// child class
-class Student : public Person {
-
+    // code
 };
 ```
 
-**Inheriting Attributes from Parent to Child:**
+`child` class
+```cpp
+class Student : public Person {
+    // code
+};
+```
+
+**Inheriting Attributes from Parent to Child**
 ```cpp
 public:
     // attributes
@@ -305,8 +315,27 @@ public:
 ```
 
 * There is no standard function that allows information about objects to be printed such as toString() in Java or \_\_str\_\_() in python.
-* C++ supports multiple inheritance
-* Overloading does not work with inheritance
+* C++ supports multiple inheritance.
+* Overloading does not work with inheritance.
+
+### Structures
+
+A `struct` is a way to group several related variables into one place:
+
+```cpp
+struct {
+    int num;
+    string myString;
+} myStructure;
+```
+
+**Accessing Structure Members**
+```cpp
+myStructure.num = 10;
+myStrucutre.myString = "hello";
+```
+
+### Example Code
 
 **[View my Commented Code Here](classesInheritance.cpp)**
 
@@ -320,3 +349,4 @@ public:
 [Short-circuit Evaluation in Programming](https://www.geeksforgeeks.org/c/short-circuit-evaluation-in-programming/)\
 [Dangling-else Ambiguity](https://www.geeksforgeeks.org/compiler-design/dangling-else-ambiguity/)\
 [Does overloading work with Inheritance?](https://www.geeksforgeeks.org/cpp/does-overloading-work-with-inheritance/)
+[C++ Structures (structs)](https://www.w3schools.com/cpp/cpp_structs.asp)
