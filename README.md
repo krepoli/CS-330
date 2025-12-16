@@ -80,8 +80,8 @@ cout << "Hello World!" << endl;
 * Pointers
 * Arrays
 
-Strings (`string`) come from the Standard Library.
-Dictionaries are **not built-in** but can be implemented through libraries.
+Strings (`string`) come from the Standard Library.<br>
+Dictionaries (or maps) are **not built-in** but can be implemented through libraries.
 
 ### Language Characteristics
 * **Statically Typed**<br>
