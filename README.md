@@ -14,7 +14,7 @@ C++ is one of the most popular programming languages. It can be found today in o
 
 # History
 
-C++ was invented by Danish scientist Bjarne Stroustrup at AT&T Bell Labs in 1979. He was impressed by the program organization and concurrency features of Simula (another programming language) and wanted to implement them to C. This included the implementation of classes, public/private access control, constructors and destructors, friend classes, call and return functions (soon removed), and default arguments. C++ is a general-purpose programming language, meaning it has many uses and extensive features. It is also object-oriented. It is used to power search engines, VR applications, air travel, game development, and movie production, and is most popular for building large software infrastructure and applications that run on limited resources.
+C++ was invented by Danish scientist Bjarne Stroustrup at AT&T Bell Labs in 1979. He was impressed by the program organization and concurrency features of Simula (another programming language) and wanted to implement them into C. This included the implementation of classes, public/private access control, constructors and destructors, friend classes, call and return functions (soon removed), and default arguments. C++ is a general-purpose programming language, meaning it has many uses and extensive features. It is also object-oriented. It is used to power search engines, VR applications, air travel, game development, and movie production, and is most popular for building large software infrastructure and applications that run on limited resources.
 
 # Installation and Setup
 
@@ -52,8 +52,8 @@ multiline comment */
 ```
 
 ### Always Include
-* <iostream> is a header file library that allows input and output objects
-* namespace std allows objects and variables to be named
+* `<iostream>` is a header file library that allows input and output objects
+* `namespace std` allows access to names in the standard namespace
 
 ```cpp
 #include <iostream>
@@ -77,10 +77,10 @@ cout << "Hello World!" << endl;
 * Doubles (`double`)
 * Booleans (`bool`)
 * Characters (`char`)
-* Strings (`string`)
 * Pointers
 * Arrays
 
+Strings (`string`) come from the Standard Library.
 Dictionaries are **not built-in** but can be implemented through libraries.
 
 ### Language Characteristics
@@ -103,7 +103,7 @@ Variables require specified data types.
 
 ### Mutability
 * By default, **strings, primitives, and other variables** are mutable.
-* Use `const` keyword to declare something unmutable.
+* Use `const` keyword to declare something immutable.
 
 ### Operators
 C++ supports a wide range of operators, including:
@@ -140,7 +140,7 @@ C++ supports a wide range of operators, including:
 * Code blocks are delimited under each condition using curly braces `{ }`.
 * C++ uses **short-circuit evaluation**<br>
 Evaluation stops as soon as the result is known.
-* The **"dangling else" problem"** occurs in nested if statements when an else combines with the wrong if.<br>
+* The **"dangling else" problem** occurs in nested if statements when an else combines with the wrong if.<br>
 Use curly braces and proper indentation to avoid this.
 * **Variable scope in loops** is the same as function-block scoping.<br>
 Loop code block variables are created and destroyed each iteration.
@@ -187,7 +187,7 @@ switch (expression) {
 if `(a == b)` is true, `(c == d)` will **not** be evaluated:
 ```cpp
 
-if (a == b) || (c == d) {
+if ((a == b) || (c == d)) {
     // something happens
 }
 ```
@@ -263,7 +263,7 @@ int main() {
 * C++ supports **recursive functions.**
 * Functions can accept **multiple parameters of different data types.**
 * Multiple values can be returned at the same time using `pair`.
-* C++ is **pass-by-value**
+* By default, C++ is **pass-by-value**
     * The caller and the callee each have independent copies of variables.
 * Arguments, parameters, and local variables are stored on the stack during execution.
 * Pointers: the pointer itself is stored on the stack and the data it points to is stored on the heap.
@@ -332,7 +332,7 @@ struct {
 **Accessing Structure Members**
 ```cpp
 myStructure.num = 10;
-myStrucutre.myString = "hello";
+myStructure.myString = "hello";
 ```
 
 ### Example Code
@@ -348,5 +348,5 @@ myStrucutre.myString = "hello";
 [Loops in C++](https://www.geeksforgeeks.org/cpp/cpp-loops/)\
 [Short-circuit Evaluation in Programming](https://www.geeksforgeeks.org/c/short-circuit-evaluation-in-programming/)\
 [Dangling-else Ambiguity](https://www.geeksforgeeks.org/compiler-design/dangling-else-ambiguity/)\
-[Does overloading work with Inheritance?](https://www.geeksforgeeks.org/cpp/does-overloading-work-with-inheritance/)
+[Does overloading work with Inheritance?](https://www.geeksforgeeks.org/cpp/does-overloading-work-with-inheritance/)\
 [C++ Structures (structs)](https://www.w3schools.com/cpp/cpp_structs.asp)
