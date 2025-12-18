@@ -192,6 +192,21 @@ if ((a == b) || (c == d)) {
 }
 ```
 
+### "Dangling Else" Problem
+
+the `else` doesn't know which `if` to pair with:
+```cpp
+if (condition) {
+}
+if (condition 1) {
+}
+ if (condition 2) {
+}
+   else
+   {
+       }
+```
+
 ### Loops
 
 **General Rules**
